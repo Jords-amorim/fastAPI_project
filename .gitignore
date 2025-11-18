@@ -1,0 +1,23 @@
+# Ambiente virtual
+.venv/
+__pycache__/
+
+# Banco de dados SQLite
+banco.db
+
+# Arquivos de configuração do Alembic
+alembic.ini
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# VS Code settings (opcional)
+.vscode/
+
+# Arquivos Python compilados
+*.pyc
