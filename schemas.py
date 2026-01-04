@@ -10,13 +10,21 @@ class UserSchema(BaseModel):
     active: Optional[bool] = True
 
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True
+
+class OrderSchema(BaseModel):
+    user: int
+
+    class Config:
+        from_attributes = True
 
 class Order(BaseModel):
     id: int
     item: str
     quantity: int
     price: float
+    user: int
 
 class OrderListResponse(BaseModel):
     orders: list[Order]
